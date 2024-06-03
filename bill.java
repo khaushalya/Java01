@@ -1,0 +1,72 @@
+  import java.util.*;
+  class Example{
+	public static void main(String args[]){
+		Scanner input =new Scanner(System.in);
+		 System.out.println("=====================================================================================");
+		 System.out.println("_           _   _                             _            _ __  __            _");
+		 System.out.println("\\ \\        / / | |                           | |          (_)  \\/  |          | |");
+		 System.out.println(" \\ \\  /\\  / /__| | ___ ___  _ __ ___   ___   | |_ ___      _| \\  / | __ _ _ __| |_");
+		 System.out.println("  \\ \\/  \\/ / _ \\ |/ __/ __\\| "+"'"+"_ "+"'"+" _ \\ / _ \\  | __/  _ \\   | | |\\/| |/  "+"'"+" | "+"'"+"__| __|");
+		 System.out.println("   \\  /\\  /  __/ | (__|(_) | | | | | |  __/  | | | ( ) |  | | |  | | (_| | |  | |_");
+		 System.out.println("    \\/  \\/ \\___|_|\\___\\___/|_| |_| |_|\\___|   \\__ \\___/   |_|_|  |_|\\__,_|_|   \\__|\n\n");
+		 System.out.println("=====================================================================================");
+			System.out.print("\nEnter customer phone number - ");
+			String phone_num=input.nextLine();
+			System.out.print("\nEnter customer Name         - ");
+			String Custo_Name=input.nextLine();
+			System.out.println("\n=====================================================================================");
+			System.out.print("\nBasmathi Qty(kg) - ");
+			double basmathi=input.nextDouble();
+			System.out.print("\nDhal Qty(kg)     - ");
+			double dhal=input.nextDouble();
+			System.out.print("\nHigland Qty      - ");
+			double higland=input.nextDouble();
+			System.out.print("\nSugar Qty(kg)    - ");
+			double sugar=input.nextDouble();
+			System.out.print("\nyoghurt Qty      - ");
+			double yoghurt=input.nextDouble();
+			System.out.print("\nFlour Qty(kg)    - ");
+			double flour=input.nextDouble();
+			System.out.print("\nSoap Qty(kg)     - ");
+			double soap=input.nextDouble();
+			double Total=(basmathi*250.00)+(dhal*180.00)+(sugar*150.00)+(yoghurt*50.00)+(flour*120.00)+(soap*160.00)+(higland*1200.00);
+			double dicount =(double)Total/10.0;
+			System.out.println("+------------------------------------------------------------------+");
+			System.out.println("|                _   __  __          _____  ________               |");
+			System.out.println("|               (_) |  \\/  |   /\\   |  __ \\ __   ___|              |");
+			System.out.println("|                _  | \\  / |  /  \\  | |__) |  | |                  |");
+			System.out.println("|               | | | |\\/| | / /\\ \\ |  _  /   | |                  |");
+			System.out.println("|               | | | |  | |/ ____ \\| | \\ \\   | |                  |");
+			System.out.println("|               |_| |_|  |_/_/    \\_\\_|  \\_\\  |_|                  |");
+			System.out.println("|                     225,Galle Road,Panadura.                     |");
+			System.out.println("+------------------------------------------------------------------+");
+			System.out.printf("%s%-15s%s","|                  #Tel   : ",phone_num,"                        |\n");
+			System.out.printf("%s%-15s%s","|                  #Name  : ",Custo_Name,"                        |\n");
+			System.out.println("+--------------------+---------+--------------------+--------------+");
+			System.out.println("|                    |  Qty    |      Unit price    |  Price       |");
+			System.out.println("+--------------------+---------+--------------------+--------------+");
+			System.out.printf("| %-19s|%6.0f   | %-17.2f  |  %-8.2f    |%s","#Basmathi",basmathi,250.00,(basmathi*250.0),"\n");              
+			System.out.println("|                    |         |                    |              |");
+			System.out.printf("| %-19s|%6.0f   | %-17.2f  |  %-8.2f    |%s","#Dhal",dhal,180.00,(dhal*180.00),"\n");
+			System.out.println("|                    |         |                    |              |");
+			System.out.printf("| %-19s|%6.0f   | %-17.2f  |  %-8.2f    |%s","#Suger",sugar,150.00,(sugar*150.00),"\n");
+			System.out.println("|                    |         |                    |              |");
+			System.out.printf("| %-19s|%6.0f   | %-17.2f  |  %-8.2f    |%s","#Highland",higland,1200.00,(higland*1200.00),"\n");
+			System.out.println("|                    |         |                    |              |");
+			System.out.printf("| %-19s|%6.0f   | %-17.2f  |  %-8.2f    |%s","#Yoghurt",yoghurt,50.00,(yoghurt*50.00),"\n");
+			System.out.println("|                    |         |                    |              |");
+			System.out.printf("| %-19s|%6.0f   | %-17.2f  |  %-8.2f    |%s","#Flour",flour,120.00,(flour*120.00),"\n");
+			System.out.println("|                    |         |                    |              |");
+			System.out.printf("| %-19s|%6.0f   | %-17.2f  |  %-8.2f    |%s","#Soap",soap,160.00,(soap*160.00),"\n");
+			System.out.println("|                    |         |                    |              |");
+			System.out.println("+--------------------+---------+--------------------+--------------+");
+			System.out.printf("%s|%10.2f    |%s","|                              |  Total             ",Total,"\n");                  
+			System.out.println("+------------------------------+--------------------+--------------+"); 
+			System.out.printf("%s|%10.2f    |%s","|                              |  Discount(%10)     ",dicount,"\n");
+			System.out.println("+------------------------------+--------------------+--------------+"); 
+			System.out.printf("%s|%10.2f    |%s","|                              |  Price             ",(Total-dicount),"\n");
+			System.out.println("+------------------------------+--------------------+--------------+"); 			
+		}
+      } 
+
+	
